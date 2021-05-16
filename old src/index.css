@@ -419,9 +419,9 @@ ul, li {
 
 .sidebar {
   background-color: var(--bg2);
+  border-left: var(--orangeDefault) 2px solid;
   position: fixed;
   top: 0;
-  z-index: 991;
   width: 15vw;
   height: 100vh;
   display: flex;
@@ -430,34 +430,10 @@ ul, li {
   display: none;
 }
 
-.sidebar-items-container {
-  display: flex;
-  flex-direction: column;
-  padding-top: 2rem;
-}
-
-.sidebar-items-container > a {
-  display: flex;
-  justify-content: flex-start;
-  padding: 1rem;
-  align-items: center;
-}
-
-.sidebar-items-container > a > svg {
-  font-size: 1.5rem;
-  margin: 0.5rem;
-}
-
-.sidebar-items-container > a:hover {
-  background-color: var(--orangeDefault);
-  color: white;
-}
-
 .smOpen {
-  display: flex;
+  display: block;
   left: 0;
   animation: openMenu 0.5s normal;
-  justify-content: space-between;
 }
 
 @keyframes openMenu {
@@ -467,23 +443,6 @@ ul, li {
   100% {
     left: 0;
   }
-}
-
-.sb1user > h4 {
-  text-align: center;
-  padding: 1rem;
-}
-
-.sb1sm {
-  color: var(--orangeDefault);
-  padding-bottom: 20vh;
-  display: flex;
-  justify-content: center;
-  font-size: 2rem;
-}
-
-.sb1sm > svg {
-  margin: 0.5rem;
 }
 
 .nav-actions {
@@ -757,9 +716,4 @@ ul, li {
 
 .new-event-form > label {
   padding: 1rem;
-}
-
-.profile-main-container {
-  padding-top: 10vh;
-  height: 90vh;
 }
